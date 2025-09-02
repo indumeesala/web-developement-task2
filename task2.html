@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Project - HTML CSS JS</title>
+  <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+  <header>
+    <h1>Intermediate HTML, CSS, and JavaScript Project</h1>
+  </header>
+
+  <nav>
+    <a href="#form">Contact Form</a>
+    <a href="#todo">To-Do List</a>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+      <div class="profile">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpTWMdWCC7GdXFGOq9XDB5BVC-Clp7kq4oGA&s" alt="Profile Icon" style="width:80px;height:80px;border-radius:50%;background:#ccc;display:block;margin:auto;">
+      </div>
+      <h3 style="text-align:center; margin:15px 0;">User Login</h3>
+      <form class="login-form">
+        <input type="text" placeholder="Username" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div class="content">
+
+
+      <div class="contact-form" id="form">
+        <h2>Contact Us</h2>
+        <form id="myForm">
+          <input type="text" id="name" placeholder="Your Name">
+          <p id="nameError" class="error"></p>
+
+          <input type="email" id="email" placeholder="Your Email">
+          <p id="emailError" class="error"></p>
+
+          <textarea id="message" placeholder="Your Message"></textarea>
+          <p id="msgError" class="error"></p>
+
+          <button type="submit">Send</button>
+        </form>
+      </div>
+
+      <div class="todo" id="todo">
+        <h2>My To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Enter task...">
+        <button onclick="addTask()">Add</button>
+        <ul id="taskList"></ul>
+
+          <script src="task2.js"></script>
+
+      </div>
+
+      
